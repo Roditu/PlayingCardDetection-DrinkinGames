@@ -1,0 +1,65 @@
+import KlasifikasiCNN as mCNN
+
+# Nama folder datasetnya
+DirektoriDataSet = "dataset"
+
+JumlahEpoh = 3
+
+LabelKelas = (
+    "Kartu Tutup",
+    "Keriting Dua",
+    "Keriting Tiga",
+    "Keriting Empat",
+    "Keriting Lima",
+    "Keriting Enam",
+    "Keriting Tujuh",
+    "Keriting Delapan",
+    "Keriting Sembilan",
+    "Keriting Sepuluh",
+    "Keriting Jack",
+    "Keriting Queen",
+    "Keriting King",
+    "Keriting Ace",
+    "Hati Dua",
+    "Hati Tiga",
+    "Hati Empat",
+    "Hati Lima",
+    "Hati Enam",
+    "Hati Tujuh",
+    "Hati Delapan",
+    "Hati Sembilan",
+    "Hati Sepuluh",
+    "Hati Jack",
+    "Hati Queen",
+    "Hati King",
+    "Hati Ace",
+    "Wajik Dua",
+    "Wajik Tiga",
+    "Wajik Empat",
+    "Wajik Lima",
+    "Wajik Enam",
+    "Wajik Tujuh",
+    "Wajik Delapan",
+    "Wajik Sembilan",
+    "Wajik Sepuluh",
+    "Wajik Jack",
+    "Wajik Queen",
+    "Wajik King",
+    "Wajik Ace",
+    "Sekop Dua",
+    "Sekop Tiga",
+    "Sekop Empat",
+    "Sekop Lima",
+    "Sekop Enam",
+    "Sekop Tujuh",
+    "Sekop Delapan",
+    "Sekop Sembilan",
+    "Sekop Sepuluh",
+    "Sekop Jack",
+    "Sekop Queen",
+    "Sekop King",
+    "Sekop Ace",
+)
+
+# Mulai training
+mCNN.TrainingCNN(JumlahEpoh, DirektoriDataSet, LabelKelas,"CardWeight.h5")
